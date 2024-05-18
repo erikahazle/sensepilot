@@ -22,19 +22,19 @@ importers:
         version: 13.1.6(eslint@8.33.0)(typescript@5.0.4)
       next:
         specifier: 13.1.6
-        version: 13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.58.0)
+        version: 13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)(sass@1.58.0)
       next-themes:
         specifier: ^0.2.1
-        version: 0.2.1(next@13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.58.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 0.2.1(next@13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)(sass@1.58.0))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       react:
-        specifier: 18.2.0
-        version: 18.2.0
+        specifier: ^18.3.1
+        version: 18.3.1
       react-dom:
         specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
+        version: 18.2.0(react@18.3.1)
       react-modal-video:
         specifier: ^2.0.0
-        version: 2.0.0(@babel/core@7.21.4)(eslint-plugin-jsx-a11y@6.7.1(eslint@8.33.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.33.0))(eslint-plugin-react@7.32.2(eslint@8.33.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 2.0.0(@babel/core@7.21.4)(eslint-plugin-jsx-a11y@6.7.1(eslint@8.33.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.33.0))(eslint-plugin-react@7.32.2(eslint@8.33.0))(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^18.15.11
@@ -2972,8 +2972,8 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -6501,21 +6501,21 @@ snapshots:
     dependencies:
       type-fest: 0.4.1
 
-  next-themes@0.2.1(next@13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.58.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next-themes@0.2.1(next@13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)(sass@1.58.0))(react-dom@18.2.0(react@18.3.1))(react@18.3.1):
     dependencies:
-      next: 13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.58.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      next: 13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)(sass@1.58.0)
+      react: 18.3.1
+      react-dom: 18.2.0(react@18.3.1)
 
-  next@13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.58.0):
+  next@13.1.6(@babel/core@7.21.4)(react-dom@18.2.0(react@18.3.1))(react@18.3.1)(sass@1.58.0):
     dependencies:
       '@next/env': 13.1.6
       '@swc/helpers': 0.4.14
       caniuse-lite: 1.0.30001450
       postcss: 8.4.14
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(@babel/core@7.21.4)(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.2.0(react@18.3.1)
+      styled-jsx: 5.1.1(@babel/core@7.21.4)(react@18.3.1)
     optionalDependencies:
       '@next/swc-android-arm-eabi': 13.1.6
       '@next/swc-android-arm64': 13.1.6
@@ -7099,15 +7099,15 @@ snapshots:
       minimist: 1.2.7
       strip-json-comments: 2.0.1
 
-  react-dom@18.2.0(react@18.2.0):
+  react-dom@18.2.0(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
+      react: 18.3.1
       scheduler: 0.23.0
 
   react-is@16.13.1: {}
 
-  react-modal-video@2.0.0(@babel/core@7.21.4)(eslint-plugin-jsx-a11y@6.7.1(eslint@8.33.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.33.0))(eslint-plugin-react@7.32.2(eslint@8.33.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-modal-video@2.0.0(@babel/core@7.21.4)(eslint-plugin-jsx-a11y@6.7.1(eslint@8.33.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.33.0))(eslint-plugin-react@7.32.2(eslint@8.33.0))(react-dom@18.2.0(react@18.3.1))(react@18.3.1):
     dependencies:
       babel-preset-react: 6.24.1
       babelify: 10.0.0(@babel/core@7.21.4)
@@ -7122,9 +7122,9 @@ snapshots:
       npm-run-all: 4.1.5
       onchange: 7.1.0
       power-assert: 1.6.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.2.0(react@18.3.1)
+      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.3.1))(react@18.3.1)
       sass: 1.58.0
       stringify: 5.2.0
       uglify-js: 3.17.4
@@ -7144,16 +7144,16 @@ snapshots:
       - zen-observable
       - zenObservable
 
-  react-transition-group@4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-transition-group@4.4.5(react-dom@18.2.0(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.20.13
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.2.0(react@18.3.1)
 
-  react@18.2.0:
+  react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
 
@@ -7618,10 +7618,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.1(@babel/core@7.21.4)(react@18.2.0):
+  styled-jsx@5.1.1(@babel/core@7.21.4)(react@18.3.1):
     dependencies:
       client-only: 0.0.1
-      react: 18.2.0
+      react: 18.3.1
     optionalDependencies:
       '@babel/core': 7.21.4
 
