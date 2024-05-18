@@ -19,6 +19,9 @@
     "react-dom": "18.2.0",
     "react-modal-video": "^2.0.0"
   },
+  "overrides": {
+    "next": "13.1.6"
+  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.34",
@@ -28,5 +31,6 @@
     "prettier-plugin-tailwindcss": "^0.2.2",
     "tailwindcss": "^3.2.4",
     "typescript": "^5.0.4"
-  }
+  },
+  "packageManager": "pnpm@9.1.1+sha1.09ada6cd05003e0ced25fb716f9fda4063ec2e3b"
 }
