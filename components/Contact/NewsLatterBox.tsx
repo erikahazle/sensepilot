@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const NewsLatterBox = () => {
   const [email, setEmail] = useState('');
+  const [botField, setBotField] = useState('');
   const [submitMessage, setSubmitMessage] = useState('');
 
   const handleSubmit = async (event) => {
@@ -12,6 +13,9 @@ const NewsLatterBox = () => {
     try {
       const formData = new URLSearchParams();
       formData.append('email', email);
+      if (botField) {
+        formData.append('bot-field', botField);
+      }
       formData.append('form-name', 'waitlist');
 
       const response = await fetch('/', {
@@ -51,13 +55,18 @@ const NewsLatterBox = () => {
               </p>
             </div>
             <div className="md:w-1/2">
-              <form name="waitlist" method="POST" data-netlify="true">
-                {/* <input
-                  type="text"
-                  name="name"
-                  placeholder="Enter your name"
-                  className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
-                /> */}
+              <form
+                name="waitlist"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <p className="invisible">
+                  <label>
+                    Don’t fill this out if you’re human:
+                    <input name="bot-field" value={email} onChange={(e) => setBotField(e.currentTarget.value)} />
+                  </label>
+                </p>
                 <input
                   type="email"
                   name="email"
