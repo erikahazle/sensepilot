@@ -5,13 +5,14 @@ const DotPositionContext = createContext(null);
 
 // Create the provider component
 export const DotPositionProvider = ({ children }) => {
-    const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   // State to hold the position of the red dot
   const [dotPosition, setDotPosition] = useState({ x: 600, y: 600 });
-  // Smoothing kernel similar to the one provided
+  const [action, setAction] = useState("");
+
   const smoothKernel = [0.1, 0.25, 0.3, 0.25, 0.1];
-    const smoothingBufferX = useRef([]);
+  const smoothingBufferX = useRef([]);
   const smoothingBufferY = useRef([]);
 
   const prevPosition = useRef({ x: 600, y: 600 });
@@ -91,6 +92,27 @@ export const DotPositionProvider = ({ children }) => {
             if (video.readyState === video.HAVE_ENOUGH_DATA) {
               const faceLandmarkerResult = faceLandmarker.detectForVideo(video, performance.now());
               if (faceLandmarkerResult && faceLandmarkerResult.faceLandmarks) {
+                const blendshapes = faceLandmarkerResult.faceBlendshapes[0]?.categories;
+
+                // Action detection
+                if (blendshapes) {
+                  const jawOpen = blendshapes.find(shape => shape.categoryName === 'jawOpen');
+                  const eyeBlinkLeft = blendshapes.find(shape => shape.categoryName === 'eyeBlinkLeft');
+                  const eyeBlinkRight = blendshapes.find(shape => shape.categoryName === 'eyeBlinkRight');
+                  const mouthPucker = blendshapes.find(shape => shape.categoryName === 'mouthPucker');
+                  if (jawOpen?.score > 0.2) {
+                    setAction('Mouth is open');
+                  } else if (eyeBlinkLeft?.score > 0.3) {
+                    setAction('Left eye blink');
+                  } else if (eyeBlinkRight?.score > 0.3) {
+                    setAction('Right eye blink');
+                  } else if (mouthPucker?.score > 0.8) {
+                    setAction('Mouth puckered');
+                  } else {
+                    setAction('');
+                  }
+                }
+
                 // Check if the landmark 8 exists
                 if (faceLandmarkerResult.faceLandmarks[0] && faceLandmarkerResult.faceLandmarks[0][8]) {
                   const landmark = faceLandmarkerResult.faceLandmarks[0][8];
@@ -134,8 +156,9 @@ export const DotPositionProvider = ({ children }) => {
 
     setupFaceLandmarker();
   }, []);
+  
   return (
-    <DotPositionContext.Provider value={{ dotPosition }}>
+    <DotPositionContext.Provider value={{ dotPosition, action }}>
       <video ref={videoRef} autoPlay playsInline style={{ display: 'none' }}></video>
       {children}
     </DotPositionContext.Provider>
