@@ -20,15 +20,20 @@ export default function RootLayout({
       <head />
 
       <body className="dark:bg-black">
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </Providers>
+        <DotPositionProvider>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </Providers>
+        </DotPositionProvider>
+
+
       </body>
     </html>
   );
 }
 
-import { Providers } from "./providers";
+import { Providers } from "./providers";import { DotPositionProvider } from "@/context/DotPositionContext";
+

@@ -25,6 +25,12 @@ const menuData: Menu[] = [
     path: "/waitlist",
     newTab: false,
   },
+  {
+    id: 4,
+    title: "Game",
+    path: "/game",
+    newTab: false,
+  },
   // {
   //   id: 4,
   //   title: "Pages",
