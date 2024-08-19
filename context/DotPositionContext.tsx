@@ -11,7 +11,7 @@ export const DotPositionProvider = ({ children }) => {
   const [dotPosition, setDotPosition] = useState({ x: 600, y: 600 });
   const [action, setAction] = useState("");
 
-  const smoothKernel = [0.1, 0.25, 0.3, 0.25, 0.1];
+  const smoothKernel = [0.05, 0.1, 0.2, 0.3, 0.2, 0.1, 0.05];
   const smoothingBufferX = useRef([]);
   const smoothingBufferY = useRef([]);
 

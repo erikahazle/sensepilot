@@ -58,9 +58,9 @@ export default function Game() {
     if (bubble && bubble.popped) {
       const timeoutId = setTimeout(() => {
         createBubble();
-      }, 500); // Delay before the next bubble appears
+      }, 500);
 
-      return () => clearTimeout(timeoutId); // Cleanup timeout if the component unmounts or re-renders
+      return () => clearTimeout(timeoutId);
     }
   }, [bubble]);
 
