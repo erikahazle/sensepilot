@@ -102,11 +102,11 @@ export default function Game() {
           position: 'absolute',
           top: `${dotPosition.y}px`,
           left: `${dotPosition.x}px`,
-          width: '15px',
-          height: '15px',
+          width: '30px',
+          height: '30px',
           backgroundColor: 'grey',
           borderRadius: '50%',
-          transform: 'translate(-50%, -50%)', // Center the custom cursor
+          transform: 'translate(-50%, -50%)',
           pointerEvents: 'none'
         }}
       />

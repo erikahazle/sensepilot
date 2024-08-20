@@ -1,8 +1,13 @@
+"use client";
+
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { useDotPosition } from "@/context/DotPositionContext";
 
 const AboutPage = () => {
+  const { dotPosition } = useDotPosition();
+
   return (
     <>
       <Breadcrumb
@@ -11,6 +16,19 @@ const AboutPage = () => {
       />
       <AboutSectionOne />
       <AboutSectionTwo />
+      <div
+        style={{
+          position: 'absolute',
+          top: `${dotPosition.y}px`,
+          left: `${dotPosition.x}px`,
+          width: '30px',
+          height: '30px',
+          backgroundColor: 'grey',
+          borderRadius: '50%',
+          transform: 'translate(-50%, -50%)',
+          pointerEvents: 'none'
+        }}
+      />
     </>
   );
 };
