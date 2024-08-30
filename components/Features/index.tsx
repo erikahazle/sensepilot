@@ -12,7 +12,7 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Main Features"
-            paragraph="SensePilot is not just software; it’s a gateway to a more accessible and connected digital experience. Each feature is designed to enhance your interaction, making your computer not only easier to use but also more powerful in its response to your needs."
+            paragraph=""
             center
           />
 

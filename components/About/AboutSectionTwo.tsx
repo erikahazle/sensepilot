@@ -21,7 +21,7 @@ const AboutSectionTwo = () => {
             <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Cost-Effective:
+                Hands-free mouse control head tracking:
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Eliminates the need for high-end, specialized equipment.
@@ -29,7 +29,7 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  User-Centric:
+                  User-centric:
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Easy installation and user-friendly interface.
@@ -40,7 +40,7 @@ const AboutSectionTwo = () => {
                   Flexible and versitile:
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Ideal for a wide range of users, from tech enthusiasts to individuals with mobility challenges.
+                  Ideal for a wide range of users, from tech and gaming enthusiasts to individuals with mobility challenges.
                 </p>
               </div>
             </div>

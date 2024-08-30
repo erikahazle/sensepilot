@@ -24,8 +24,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Designed for Accessibility, Built for Universal Use"
-                paragraph="SensePilot isn't just an accessibility tool—it's a new way to interact with your digital environment, designed for everyone who seeks a more intuitive connection."
+                title="Reclaim your Independence & Boost your Productivity"
+                paragraph="Using AI to map your face's orientation and recognise individual gestures, you can personalise the inputs according to your abilities, range of motions and preferences, making it easier to operate a PC, using your existing webcam."
                 mb="44px"
               />
 

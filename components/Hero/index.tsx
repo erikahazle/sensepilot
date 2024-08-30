@@ -14,11 +14,11 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Experience the Future of Digital Navigation
+                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-4xl md:leading-tight">
+                Effortless Control, Infinite Possibilities
                 </h1>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                SensePilot revolutionizes how you interact with technology, using nothing more than your natural movements and voice. It&apos;s accessibility redefined, making digital spaces more inclusive without the need for expensive, specialized hardware.
+                SensePilot is a personalisable AI-powered accessibility hub to help you operate a PC with head movements and facial gestures without the need for costly specialised equipment.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   {/* <Link
