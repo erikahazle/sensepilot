@@ -68,7 +68,6 @@ const NewsLatterBox = () => {
                   </label>
                 </p>
                 <input
-                  type="email"
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.currentTarget.value)}
