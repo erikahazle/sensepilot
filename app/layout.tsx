@@ -1,5 +1,5 @@
 "use client";
-import { GoogleTagManager } from "@next/third-parties/google"
+import { GoogleTagManager } from '@next/third-parties/google'
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -18,7 +18,7 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <GoogleTagManager gtmId="KH99RV2P" />
+      <GoogleTagManager gtmId="GTM-KH99RV2P" />
       <body className="dark:bg-black">
         <Providers>
           <Header />
