@@ -18,9 +18,9 @@ export default function RootLayout({
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <GoogleTagManager gtmId="GTM-KH99RV2P" />
+      {/* <GoogleTagManager gtmId="GTM-KH99RV2P" /> */}
       <body className="dark:bg-black">
-        <noscript>
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KH99RV2P"
             height="0"
@@ -28,7 +28,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           >
           </iframe>
-        </noscript>
+        </noscript> */}
         <Providers>
           <Header />
           {children}
