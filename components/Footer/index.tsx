@@ -168,6 +168,17 @@ const Footer = () => {
                       Cookie Policy{" "}
                     </a>
                   </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://app.termly.io/policy-viewer/policy.html?policyUUID=8e269881-0441-48ea-824b-c68a732183b1"
+                      className="termly-display-preferences mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                    >
+                      {" "}
+                      Consent Preferences{" "}
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

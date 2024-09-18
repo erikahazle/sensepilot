@@ -1,5 +1,4 @@
 "use client";
-import { GoogleTagManager } from '@next/third-parties/google'
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -13,22 +12,12 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      {/* <GoogleTagManager gtmId="GTM-KH99RV2P" /> */}
       <body className="dark:bg-black">
-        {/* <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KH99RV2P"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          >
-          </iframe>
-        </noscript> */}
+        <Script
+          id="termly-consent"
+          strategy="beforeInteractive"
+          src="https://app.termly.io/resource-blocker/602dbb41-aff2-4ab6-b965-5149d49043b6?autoBlock=on"
+        />
         <Providers>
           <Header />
           {children}
@@ -40,4 +29,6 @@ export default function RootLayout({
   );
 }
 
-import { Providers } from "./providers";
+import { Providers } from "./providers";import Head from "next/head";
+import Script from "next/script";
+
