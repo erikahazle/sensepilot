@@ -1,4 +1,5 @@
 "use client";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -25,6 +26,7 @@ export default function RootLayout({
           <ScrollToTop />
         </Providers>
       </body>
+      <GoogleAnalytics gaId="G-1094LBFSMW" />
     </html>
   );
 }
