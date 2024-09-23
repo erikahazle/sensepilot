@@ -29,7 +29,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
-                  Experience the Future of Digital Navigation.
+                  Effortless Control, Infinite Possibilities.
                 </p>
                 {/* <div className="flex items-center">
                   <a

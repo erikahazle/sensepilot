@@ -23,16 +23,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* <Head>
-        <title>SensePilot - accessibility software</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta name="description" content="AAC software to use a PS with head and facial expressions" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head> */}
       <ScrollUp />
       <Hero />
+      <Video />
       <Features />
-      {/* <Video /> */}
       {/* <Brands /> */}
       <AboutSectionOne />
       <AboutSectionTwo />

@@ -19,12 +19,12 @@ const menuData: Menu[] = [
   //   path: "/blog",
   //   newTab: false,
   // },
-  {
-    id: 3,
-    title: "Waitlist",
-    path: "/waitlist",
-    newTab: false,
-  },
+  // {
+  //   id: 3,
+  //   title: "Waitlist",
+  //   path: "/waitlist",
+  //   newTab: false,
+  // },
   // {
   //   id: 4,
   //   title: "Pages",

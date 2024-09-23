@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Personalisable",
     paragraph:
-      "Customise to your preferences and requirements based on your unique needs.",
+      "Select from 25 different facial expressions. Customise any selections to your preferences and requirements based on your unique needs.",
   },
   {
     id: 1,
@@ -72,9 +72,9 @@ const featuresData: Feature[] = [
         <rect width="28" height="28" rx="1" />
       </svg>
     ),
-    title: "Accessibility Enhancements",
+    title: "Easy setup",
     paragraph:
-      "Easy to use and works with a standard webcam. Does not require IR webcams or other costly technology.",
+      "SensePilot works with standard in-built or external cameras, so no need for expensive equipment. It comes preconfigured but is very easy to adjust for your specific needs.",
   },
   {
     id: 1,
