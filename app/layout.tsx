@@ -25,8 +25,8 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
         </Providers>
+        <GoogleAnalytics gaId="G-1094LBFSMW" />
       </body>
-      <GoogleAnalytics gaId="G-1094LBFSMW" />
     </html>
   );
 }
