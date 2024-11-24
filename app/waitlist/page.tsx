@@ -1,5 +1,11 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'SensePilot - assistive technology',
+  description: 'Assistive software to control your PC with your head and facial expressions',
+}
 
 const ContactPage = () => {
   return (

@@ -16,8 +16,8 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SensePilot - AAC software',
-  description: 'AAC software to control your PC with your head and facial expressions',
+  title: 'SensePilot - assistive technology',
+  description: 'Assistive software to control your PC with your head and facial expressions',
 }
 
 export default function Home() {

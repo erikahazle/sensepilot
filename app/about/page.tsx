@@ -1,6 +1,12 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'SensePilot - assistive technology',
+  description: 'Assistive software to control your PC with your head and facial expressions',
+}
 
 const AboutPage = () => {
   return (
