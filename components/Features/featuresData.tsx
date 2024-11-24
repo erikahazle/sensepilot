@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Personalisable",
     paragraph:
-      "Select from 25 different facial expressions. Customise any selections to your preferences and requirements based on your unique needs.",
+      "Select from 22 different facial expressions. Customise any selections to your preferences and requirements based on your unique needs.",
   },
   {
     id: 1,

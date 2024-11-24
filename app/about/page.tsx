@@ -13,7 +13,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Us"
-        description="SensePilot is reshaping interaction with technology through eye tracking, head movements, and voice commands, ensuring accessibility for all. Our mission is to provide intuitive and inclusive computing solutions that make digital navigation effortless. Join us in making technology accessible to everyone."
+        description="SensePilot is reshaping interaction with technology through head tracking and facial expressions, ensuring accessibility for all. Our mission is to provide intuitive and inclusive computing solutions that make digital navigation effortless. Join us in making technology accessible to everyone."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
